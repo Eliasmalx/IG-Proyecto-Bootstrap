@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid align-items-baseline">
+            <a class="navbar-brand" href="#">
+                <p class="d-inline-block align-text-top "><i class="fa-brands fa-instagram"></i> Instagram</p>
+            </a>
+            <div class="d-flex">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header d-flex">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new Post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Caption:</h6>
+                                <textarea class="form-control" id="message-text"
+                                    aria-label="Add the caption of your post here"></textarea>
+                                <div class="d-flex p-2">
+                                    <i class="fa-solid fa-location-dot p-1"></i>
+                                    <i class="fa-solid fa-camera p-1"></i>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1"
+                        style="background-color: white">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#"><strong>Log out</strong></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de NavBar -->
+    <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                    class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                    class="fa-regular fa-square"></i></button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="row">
+                <div class="col-md-4 p-1"><img style="height: 30vw; object-fit: cover"
+                        src="https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/12/28/658d3cc8a1698.jpeg"
+                        class="img-fluid w-100" alt=""></div>
+                <div class="col-md-4 p-1"><img style="height: 30vw; object-fit: cover"
+                        src="https://capasdelatierra.win/wp-content/uploads/paisajes-naturales.jpg"
+                        class="img-fluid w-100" alt=""></div>
+                <div class="col-md-4 p-1"><img style="height: 30vw; object-fit: cover"
+                        src="https://www.feeling.com.mx/img/2020/04/comid.jpg" class="img-fluid w-100" alt=""></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 p-1"><img style="height: 30vw; object-fit: cover"
+                        src="https://capasdelatierra.win/wp-content/uploads/paisajes-naturales.jpg"
+                        class="img-fluid w-100" alt=""></div>
+                <div class="col-md-4 p-1"><img style="height: 30vw; object-fit: cover"
+                        src="https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/12/28/658d3cc8a1698.jpeg"
+                        class="img-fluid w-100" alt=""></div>
+                <div class="col-md-4 p-1"><img style="height: 30vw; object-fit: cover"
+                        src="https://www.feeling.com.mx/img/2020/04/comid.jpg" class="img-fluid w-100" alt=""></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 p-1"><img style="height: 30vw; object-fit: cover"
+                        src="https://www.feeling.com.mx/img/2020/04/comid.jpg" class="img-fluid w-100" alt=""></div>
+                <div class="col-md-4 p-1"><img style="height: 30vw; object-fit: cover"
+                        src="https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/12/28/658d3cc8a1698.jpeg"
+                        class="img-fluid w-100" alt=""></div>
+                <div class="col-md-4 p-1"><img style="height: 30vw; object-fit: cover"
+                        src="https://capasdelatierra.win/wp-content/uploads/paisajes-naturales.jpg"
+                        class="img-fluid w-100" alt=""></div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="d-flex flex-column align-items-center">
+                <div class="card w-50 mt-2">
+                    <div class="card-body">
+                        <div class="titulo-card d-flex justify-content-between">
+                            <h5 class="card-title">Mi panda el comelon</h5>
+                            <p class="fst-italic">08/26</p>
+                        </div>
+                        <img src="https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/12/28/658d3cc8a1698.jpeg"
+                            class="card-img-top" alt="panda">
+                        <strong>103</strong> <i class="fa-solid fa-heart" style="color: red;"></i>
+                        <strong>1402</strong> <i class="fa-regular fa-comment"></i>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the</p>
+                    </div>
+                </div>
+
+                <div class="card w-50 mt-2">
+                    <div class="card-body">
+                        <div class="titulo-card d-flex justify-content-between">
+                            <h5 class="card-title">Hermoso Paisaje</h5>
+                            <p class="fst-italic">09/26</p>
+                        </div>
+                        <img src="https://capasdelatierra.win/wp-content/uploads/paisajes-naturales.jpg"
+                            class="card-img-top" alt="paisaje">
+                        <strong>153</strong> <i class="fa-solid fa-heart" style="color: red;"></i>
+                        <strong>1802</strong> <i class="fa-regular fa-comment"></i>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the</p>
+                    </div>
+                </div>
+
+                <div class="card w-50 mt-2">
+                    <div class="card-body">
+                        <div class="titulo-card d-flex justify-content-between">
+                            <h5 class="card-title">Hermoso Paisaje</h5>
+                            <p class="fst-italic">09/26</p>
+                        </div>
+                        <img src="https://www.feeling.com.mx/img/2020/04/comid.jpg"
+                            class="card-img-top" alt="paisaje">
+                        <strong>13</strong> <i class="fa-solid fa-heart" style="color: red;"></i>
+                        <strong>102</strong> <i class="fa-regular fa-comment"></i>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
